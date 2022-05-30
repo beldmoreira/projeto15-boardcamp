@@ -1,0 +1,43 @@
+GET /categories
+lista de todas as categorias cada no formato acima:
+
+
+POST /categories
+- Inserir categoria
+    - **Rota:** **POST** `/categories`
+    - **Request:** *body* no formato
+        
+        ```jsx
+        {
+          name: 'Investigação'
+        }
+        ```
+        
+    - **Response**: status 201, sem dados
+
+
+GET /games
+Para a rota /games?name=ba, deve ser retornado uma array somente com os jogos que comecem com "ba", como "Banco Imobiliário", "Batalha Naval", etc
+
+
+GET /customers
+Response: lista com todos os clientes
+
+GET /customers/:id
+Response: somente o objeto do usuário com o id passado:
+
+Inserir um cliente
+POST /customers
+Response: status 201, sem dados
+
+ PUT /customers/:id
+ Response: status 200, sem dados
+
+ GET /rentals
+
+ POST /rentals
+
+ POST /rentals/:id/return
+
+ DELETE /rentals/:id
+
